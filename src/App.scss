@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.bg {
+  background: hsl(230, 17%, 14%);
+  height: 100vh;
+  color: hsl(0, 0%, 100%);
+  z-index: -2;
+}
+.whiteMode {
+  background: hsl(0, 0%, 100%);
+  color: black;
+}
+.header {
+  background: hsl(232, 19%, 15%);
+  .topo {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    height: 200px;
+    .rightTop h1 {
+      letter-spacing: 1px;
+    }
+    .rightTop p {
+      letter-spacing: 0.5px;
+    }
+  }
+}
+
+.whiteHeader {
+  background: hsl(225, 100%, 98%);
+}
+.whiteTopo {
+  .rightTop h1 {
+    color: hsl(230, 17%, 14%);
+    font-weight: 800;
+  }
+  .rightTop p {
+    color: hsl(230, 17%, 14%);
+    font-weight: 700;
+  }
+}
+
+.mod {
+  display: flex;
+  margin-right: 50px;
+}
+
+.custom-radio-btn {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 25px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+  background: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  input {
+    display: none;
+  }
+  .checkmark {
+    position: absolute;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: hsl(230, 17%, 14%);
+    display: inline-block;
+    transition: opacity 1s ease;
+  }
+  input:checked + .checkmark {
+    display: inline-block;
+    background: hsl(0, 0%, 100%);
+    left: 27px;
+    transition: 1s;
+  }
+  p {
+    left: 55px;
+    position: absolute;
+    font-size: 12px;
+    color: hsl(15, 100%, 70%);
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  margin: -100px auto;
+}
+
+.socialMedias {
+  margin-right: 30px;
+  height: 250px;
+  width: 300px;
+  background: hsl(228, 28%, 20%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .nome {
+    margin: 30px 0 20px 0;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+  .followers {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+  p {
+    color: hsl(228, 34%, 66%);
+  }
+
+  .follow {
+    color: hsl(163, 72%, 41%);
+    margin-top: 30px;
+  }
+  .unfollow {
+    color: hsl(356, 69%, 56%);
+    margin-top: 30px;
+  }
+}
+.whiteSocialMedias {
+  background: hsl(227, 47%, 96%);
+  .nome {
+    color: hsl(228, 12%, 44%);
+  }
+}
+
+.overview {
+  width: 1200px;
+  margin: 160px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    .infoToday {
+      width: 280px;
+      height: 130px;
+      background: hsl(228, 28%, 20%);
+      margin: 20px 20px 0 0;
+      border-radius: 5px;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      align-items: center;
+      justify-items: center;
+      p {
+        letter-spacing: 0.5px;
+        color: hsl(228, 34%, 66%);
+      }
+      h2 {
+        font-size: 2.5rem;
+        margin-top: -20px;
+      }
+      .positivo {
+        color: hsl(163, 72%, 41%);
+      }
+      .negativo {
+        color: hsl(356, 69%, 56%);
+      }
+    }
+    .whiteInfoToday {
+      background: hsl(227, 47%, 96%);
+      p {
+        color: hsl(230, 17%, 14%);
+        font-weight: 800;
+      }
+    }
+  }
+}
+
+.whiteOverview {
+  h1 {
+    color: hsl(228, 12%, 44%);
+  }
+}
